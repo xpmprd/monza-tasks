@@ -1,0 +1,51 @@
+@import '~global/styles';
+
+.extraText{
+  text-align: left;
+  margin-top: 2px;
+  width: 100%;
+  font-family: "Montserrat", sans-serrif;
+    
+  .extraP{
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(126, 123, 123);
+    font-family: sans-serif;
+    font-weight: 600;
+    width:100%;
+
+    @include for-navbar {
+      font-size: 12px;
+    }
+      
+    a {
+      font-family: inherit;
+      outline: none;
+      text-decoration: none;
+      margin: 0px 4px;
+        
+        @include for-navbar {
+          margin-left: 0px 0px 3px 0px;
+        };
+        
+        @include for-iphone {
+          margin-left: 0;
+          left: -1px;
+          position: relative;
+        }
+    p {
+      display: inline-block;
+      font-size: 13px;
+      color: #773be2;
+      font-family: sans-serif;
+      font-weight: 600;
+
+      @include for-navbar {
+        font-size: 12px;
+      }
+        };
+          };
+      };
+};
+
+ 

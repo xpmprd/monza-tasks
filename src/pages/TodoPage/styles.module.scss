@@ -1,0 +1,12 @@
+@import '~global/styles';
+
+.Cnt {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+  @include for-navbar {
+    width: 90%;
+    height: 500px;
+  }
+};

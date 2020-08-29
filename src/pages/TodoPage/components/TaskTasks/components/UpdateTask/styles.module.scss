@@ -1,0 +1,47 @@
+@import "~global/styles";
+
+.InputContainer {
+    margin-top: 15px;
+    margin-bottom: 55px;
+    width:100%;
+};
+
+.FormContainer {
+    width:100%;
+};
+
+.ButtonEdit {
+  display: inline-block;
+  margin: 0 20px;
+  width: 20%;
+
+    @include for-navbar {
+      width: 6rem;
+    }  
+    @include for-iphone {
+      width: 8rem;
+      margin: 8px;
+    } 
+};
+  
+.ButtonCancel {
+  display: inline-block;
+  margin: 0 20px;
+  width: 20%;
+
+  @include for-navbar {
+    width: 6rem;
+  }  
+
+  @include for-iphone {
+    width: 8rem;
+    margin: 8px;
+  } 
+};
+  
+.ButtonContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+};

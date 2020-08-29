@@ -1,0 +1,53 @@
+$font-family: "Montserrat", sans-serrif;
+$background-color: #333333;
+$main-color: #773be2;
+
+@mixin global-styles {
+  color:rgb(51, 51, 51); 
+margin-top: 0;
+letter-spacing: 1px;
+}
+
+
+@mixin for-navbar {
+  @media screen and (max-width: 525px) {
+    @content
+  }
+};
+
+@mixin for-navbar2 {
+  @media screen and (max-width: 500px) {
+    @content
+  }
+};
+
+@mixin for-mobile {
+  @media screen and (max-width: 470px) {
+    @content
+  }
+};
+
+@mixin for-hamburger {
+  @media screen and (min-width: 470px) {
+    @content
+  }
+};
+
+@mixin for-heading {
+  @media screen and (max-width: 450px) {
+    @content
+  }
+};
+
+
+@mixin for-iphone {
+  @media screen and (max-width: 320px) {
+    @content
+  }
+};
+
+@mixin for-fold {
+  @media screen and (max-width: 280px) {
+    @content
+  }
+};

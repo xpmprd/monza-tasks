@@ -1,0 +1,47 @@
+@import "~global/styles";
+
+.Tasks {
+  margin: 15px 0 55px 0;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+};
+
+.Delete {
+  display: inline-block;
+  margin: 0 20px;
+  width: 20%;
+    
+    @include for-navbar {
+      width: 6rem;
+    }
+    @include for-iphone {
+      width: 8rem;
+      margin: 8px;
+    } 
+};
+
+.Cancel {
+  display: inline-block;
+  margin: 0 20px;
+  width: 20%;
+
+    @include for-navbar {
+      width: 6rem;
+    }
+    @include for-iphone {
+      width: 8rem;
+      margin: 8px;
+    } 
+};
+
+.All {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#P{
+  overflow-wrap: break-word;
+}

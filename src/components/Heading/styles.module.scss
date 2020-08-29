@@ -1,0 +1,36 @@
+@import "~global/styles";
+
+.h1 {
+  font-size: 0.78rem;
+  @include global-styles;
+  @include for-heading {
+    font-size: 0.6rem;
+  }
+};
+
+.h2 {
+  font-size: 0.9rem;
+  @include global-styles;
+  color: grey;
+  @include for-fold {
+    font-size: 0.7rem;
+   }
+};
+
+.h3 {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-bottom: 5px;
+  @include global-styles;
+};
+
+.h4 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.4rem;
+  @include global-styles;
+};
+
+.bold {
+    font-weight: 700;
+}

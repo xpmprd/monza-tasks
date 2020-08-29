@@ -1,0 +1,25 @@
+.ContainerDown {
+  width: 100%;
+  display: flex;
+  min-height: 22.2rem;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
+  flex-direction: column;
+};
+
+.ContainerUp {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  min-height: 22.2rem;
+  line-height: 22.2rem;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px 0px;
+  align-items: center;
+  justify-content: center;
+};
+
+.Items {
+  width: 100%;
+  text-align: center;
+  align-items: left;
+};

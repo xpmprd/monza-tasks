@@ -1,0 +1,88 @@
+@import '~global/styles';
+
+.Container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  };
+  
+  .MessageEmail {
+    width: 100%;
+    text-align: left;
+    padding-left: 2px;
+    position: relative;
+    top: -36px;
+     
+      @include for-iphone {
+        top: -21px;
+      }
+
+  };
+  
+   
+  .ErrorWrapper{
+    width: 246px;
+    text-align: center;
+    position: relative;
+    top: 19px;
+
+     
+  
+    p{
+      text-align: center;
+    };
+  };
+  
+  .ContainerForm {
+    width: 26rem;
+    max-width: 26rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px auto;
+
+      @include for-navbar {
+        width: 90%;
+      }
+    
+    Form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+
+      @include for-navbar {
+        width: 100%;
+      }
+  };
+  
+    .Image {
+      position: relative;
+      top:-30px;
+          };
+  };
+
+ .HeadingContainer {
+     text-align: left;
+     width: 100%;
+     margin-top: 10px;
+ };
+
+ .ExtraContainer {
+   display: inline-block;
+   width: 100%;
+ };

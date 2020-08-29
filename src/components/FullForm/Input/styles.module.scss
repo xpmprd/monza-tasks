@@ -1,0 +1,36 @@
+@import "~global/styles";
+
+.InputContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.21) -2px 2px 5px 0px;
+
+   @include for-iphone {
+     margin-bottom: 1.5rem;
+   }
+    
+  .Input {
+      background-color: white;
+      height: 35px;
+      font-family: sans-serif;
+      width: 100%;
+      padding: 1rem 2rem 1rem 10px;
+      margin: 0px;
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+    
+      &:focus {
+      outline-color:#773be2;
+      };
+
+      &:error {
+      outline-color:red;
+      };
+
+  };
+};

@@ -1,0 +1,103 @@
+@import '~global/styles';
+
+.Container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+};
+
+.MessageEmail {
+  width: 237px;
+  text-align: left;
+  padding-left: 2px;
+  position: relative;
+  top: -36px;
+     
+    @include for-iphone {
+      top: -21px;
+    }
+};
+
+.MessagePassword {
+  width: 237px;
+  text-align: left;
+  position: relative;
+  top: -36px;
+  padding-left: 2px;
+    
+    @include for-iphone {
+      top: -21px;
+    }
+};
+
+.ButtonWrapper {
+  
+  width: 100%;
+};
+
+.ErrorWrapper{
+  width: 237px;
+  text-align: center;
+  position: relative;
+  top: 15px;
+
+  
+
+  p{
+    text-align: center;
+  };
+};
+
+.ContainerForm {
+  width: 26rem;
+  max-width: 26rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 5px 0px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px auto;
+    
+    @include for-navbar {
+      width: 90%
+    }
+  .Form{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+};
+
+  .Image {
+    position: relative;
+    top:-30px;
+        };
+};
+
+.RecoverContainer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+   
+   a {
+    text-decoration: none;
+   }
+
+   p {
+    font-size: 13px;
+    color: #773be2;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+}

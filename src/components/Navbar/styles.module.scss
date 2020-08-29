@@ -1,0 +1,75 @@
+@import "~global/styles";
+
+.NavContainer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 2px 5px 0px;
+  margin-bottom: 40px;
+    
+  .Container {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+
+      @include for-mobile {
+        padding-right: 20px;
+        padding-left: 0;
+      }
+};
+
+    .rightContaier {
+      display: flex;
+      line-height: 60px;
+      align-items: center;
+
+        @include for-mobile {
+          display: none;
+        }
+        
+      a {
+        color: rgb(51, 51, 51);
+        font-size: 0.9rem;
+        font-family: "Montserrat", sans-serrif;
+        text-decoration: none;
+        font-weight: 700;
+        position: relative;
+        };
+        
+      a:after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: rgb(51, 51, 51);
+        transition: 0.2s;
+      };
+
+      a:hover:after{
+        width: 100%;
+      };
+    };
+
+  .linebreak {
+    width: 2px;
+    height: 15px;
+    background: rgb(51, 51, 51);
+    margin: 0 10px;
+  };
+
+  .span {
+    color: #773be2;
+    font-size: 0.9rem;
+    font-family: "Montserrat", sans-serrif;
+    font-weight: 700;
+    };
+};
+
+.Link {
+  cursor: pointer;
+}

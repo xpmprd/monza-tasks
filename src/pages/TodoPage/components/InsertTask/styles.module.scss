@@ -1,0 +1,15 @@
+.Container {
+  width: 100%;
+  display: flex;
+  
+  input {
+    width: 70%;
+    display: inline-block;
+  }
+  
+  button {
+    width: 30%;
+    display: inline-block;
+  }
+};
+
